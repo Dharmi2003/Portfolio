@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="Style.css">
+        <script src="Script.js" defer></script>
+        <script src="https://kit.fontawesome.com/a40602d086.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-txt">
+                    <p>Full Stack Developer</p>
+                    <p>Web Developer</p>
+                    <h1> Hi, I'm <span>Dharmishtha</span> <br>from Ahmedabad</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <!--About Section-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/About.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> About Me </h1><br>
+                        <p>  I am a Full Stack Developer with a focus on building robust, user-friendly web applications. With a strong foundation in both front-end and back-end technologies. I built responsive websites using <b> HTML, CSS, and JavaScript,</b> alongside modern frameworks like <b>React</b> for the front-end. For back-end development, I work with <b>Firebase</b> to create seamless and dynamic web experiences, and I have a keen interest in integrating third-party APIs to enhance application functionality. <br><br>
+                        
+                        I am always excited to learn new technologies and improve my skill set. Whether it’s building a portfolio to showcase my work or developing complex systems, I strive to create solutions that exceed expectations. When I’m not coding, you can find me exploring new trends in technology, working on personal projects, or enjoying time with friends and family. I'm always open to new challenges and opportunities, and I’m eager to collaborate on exciting projects that push the boundaries of what’s possible. </p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span> Web Development</span><br> Web App Development</li>
+                                <li><span> Front-end Development</span><br> Designing Web/App Interfaces using latest Front-end Frameworks like React</li>
+                                <li><span>Full Stack Development</span><br> Designing Web / App using Backend Technologies like Firebase Integration</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> Dec-2024 - Current </span><br> Front-End  Trainee at Orinson Technology's Internship Program</li>
+                                <li><span> Nov-2024 to Dec-2024 </span><br> Full Stack Trainee at Unified Mentor Internship Program</li>
+                                <li><span> Jan-2024 to Feb-2024</span><br> We Development Virtual Internship at Flazetech</li>
+                                <li><span>2023</span><br> Digital House (E-Commerce Website) using Django (Python Framework)</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br> BSC (CA&IT) <br> GPA: 3.86/5 <br> KSSBM, Gujarat University, Ahmedabad</li>
+                                <li><span>2020</span><br> HSC <br> Percentage: 86% <br> SB Vidhyalaya, Ahmedabad </li>
+                                <li><span>2018</span><br> SSC <br> Percentage: 90% <br> Ankur Vidhyalaya, Ahmedabad </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title"> My Services </h1>
+
+                <div class="service-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> Web Designs </h2><br>
+                        <p> Web design is the process of creating the visual layout and structure of a website. It focuses on aesthetics, usability, and functionality, ensuring that the design aligns with the brand and provides a pleasant user experience. In this languages like HTML, CSS, JavaScript are used and frameworks like React, Angular, or Node.js to create responsive, dynamic websites.</p>
+                        <a href="#">Learn More </a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2> Front-end Designs </h2><br>
+                        <p>As a Developer, <b> I focus on transforming ideas into interactive and visually appealing web experiences. </b> I work with a combination of HTML, CSS, and JavaScript to bring static designs to life, ensuring responsive layouts that work seamlessly across all devices. My expertise with modern frameworks like React allows me to create fast, scalable websites. I strive to ensure that my designs are user-friendly, with intuitive navigation and engaging UI elements that keep users interested. I follow best practices in UI/UX design to ensure that the websites are both functional and enjoyable to use. Additionally, I prioritize performance optimization by implementing techniques like code splitting and lazy loading to keep the website fast and responsive.</p>
+                        <a href="#">Learn More </a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2> Full-Stack Designs </h2><br>
+                        <p>In my Full-Stack Projects, <b> I focus on developing complete web applications that handle both the user interface and the server-side logic.</b> I integrate my skills in front-end technologies with back-end tool like Firebase to deliver integrated and scalable solutions. From managing user authentication to building APIs and handling databases, I ensure that the full application functions seamlessly, both on the front-end and back-end. I use Firebase for real-time data synchronization. Additionally, I deploy applications on Github and Netlify.</p>
+                        <a href="#">Learn More </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--Portfolio-->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/work1.png"><br>
+                        <div class="layer">
+                            <h3>Digital House using Django (University Project)</h3>
+                            <p> <b>Digital House</b> is an e-commerce website offering a wide range of electronics, home appliances, and digital products. It provides a seamless shopping experience with easy navigation, secure payments, and fast delivery options. </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="Images/Glamary.png"><br>
+                        <div class="layer">
+                            <h3>GLAMARY (React Project)</h3>
+                            <p> <b>GLAMARY</b> is an e-commerce platform built with <b>React</b>to provide an intuitive and dynamic shopping experience. The project features a responsive and user-friendly interface that allows users to browse through various product categories, including Men, Women, and Kids' sections. The application is designed to manage and update cart items dynamically, with a real-time total that reflects the added products. It also features a footer that appears across all pages to provide easy access to essential information.
+
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="Images/Gym.png"><br>
+                        <div class="layer">
+                            <h3>Gym Managment System (Full-Stack Project)</h3>
+                            <p><b> The LiftUp Gym Management System</b>is a full-stack application. The project includes three key modules: Admin, Members, and Users, with each having distinct functionality. Admins can manage members by adding, updating, and deleting records. Members can log in. Users can access their details and interact with the system. This project uses Firebase for user authentication, real-time data synchronization.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <!--<div class="work">
+                        <img src="E:\1_College\UM\New\work4.png">
+                    </div>
+
+                    <div class="work">
+                        <img src="E:\1_College\UM\New\work5.png">
+                    </div>-->
+                </div>
+
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+
+
+        <!--Contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1><br>
+                        <p><i class="fa-solid fa-square-envelope"></i> dhruvuprajapati12@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>  97*******2</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+
+                            <a href="https://www.linkedin.com/in/dharmishtha-chandegara-3b3312272/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                            <a href="https://github.com/Dharmi2003" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="../Portfolio/D_Resume_Portfolio.pdf" download class="btn resume-btn">Download CV </a>
+                    </div>
+                    <div class="contact-right">
+                        <form id="contactForm">
+                            <input type="text" id="Name" placeholder="Your Name" required>
+                            <input type="email" id="Email" placeholder="Your Email" required>
+                            <textarea id="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p><i class="fa-regular fa-copyright"></i> 2025 Copyright: Dharmishtha Chandegara <!-- Made with <i class="fa-solid fa-heart" id="heart"></i> by Easy Tutorials --> </p>
+            </div>
+        </div>
+        <script src="Script.js">
+            
+        </script>
+    </body>
+</html>
